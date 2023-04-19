@@ -1,0 +1,105 @@
+#Esto es un comentario
+''' Este es un bloque de comentarios en Python'''
+""" Este también es un bloque de comentarios en Python """
+
+# Así se declara una variable en Python
+cadena = "Este es un String"
+
+# Así se imprime en Python
+print ("Hola Mundo!")
+
+# Así se imprime una variable declarada
+print (cadena)
+
+# Así se pueden realizar funciones básicas en Python
+
+# Sumar
+5+3
+
+# Restar
+6-3
+
+# Multiplicar
+2*8
+
+# Dividir
+8/3
+
+# División de entero
+8//3
+
+# Resto de división
+5%7
+
+# Potencia o exponencial
+3**4
+
+""" La indentación es un elemento de gran importancia en Python. A diferencia de otros lenguajes de
+programación, las llaves no se utilizan para crear bloques de código, sino que en su lugar se utiliza
+la indentación. Es posible usar tabulación o espacios, la regla general es que se utilicen 4 espacios
+en caso de usar estos últimos. 
+ En caso de no usar la indentación, el código podría dar un resultado completamente inesperado, o
+simplemente arrojar un mensaje de error. """
+
+"""Con import podemos importar uno o varios módulos en la misma sentencia. Para ello solo
+debemos separar el nombre de los módulos con una coma. No es necesario agregar la extensión
+del archivo """
+
+""" Python solo ejecutará un módulo en la primera llamada que se haga
+a él dentro del código de programación; por lo que si dentro del código se hace otra llamada al
+mismo modulo, se omitirá su ejecución. """
+
+""" MÓDULOS
+Cuando importamos un módulo, Python primero buscará en el directorio actual el archivo
+importado, y en caso de no encontrarse allí, buscará en ruta de búsqueda en la variable de entorno
+PYTHONPATH del sistema operativo.
+
+PYTHONPATH puede ser configurada en la ventana de consola haciendo uso del siguiente código: """
+#set PYTHONPATH = C:\python20\lib;
+
+""" Para el caso del Sistema Operativo Windows o Archivos compilados.
+Con la función dir() podemos consultar todas las propiedades y métodos de un objeto, sin tomar
+en cuenta sus valores. Incluso las propiedades incorporadas que están por defecto en todos los
+objetos son devueltas por la función. """
+#dir(objeto)
+#Ejm:
+
+#>>>number = [12]
+#>>> print(dir(number))
+
+""" PAQUETES 
+Un paquete es una carpeta que contiene varios módulos. Esta carpeta debe contener un archivo
+llamado __init__.py para que Python entienda que se trata de un paquete.
+
+Supongamos que tenemos un paquete llamado matemática. 
+La carpeta debe tener el nombre matemática, 
+y también que dentro tenemos 2 módulos: aritmetica.py y geometria.py; 
+así como nuestro archivo __init__.py. 
+De la misma manera, que el módulo matemática contiene una función llamada sumar. 
+Entonces tenemos las siguientes formas de escribir la sentencia import para usar la función sumar: 
+"""
+#>>>import matematica.aritmetica
+#>>>print(matemática.aritmetica.sumar(7, 5))
+
+""" En esta forma del import, al hacer uso del módulo es necesario escribir la dirección completa de la
+función, es decir: paquete.modulo.funcion(). En las siguientes forma no:"""
+#>>>from matematica import aritmetica
+#>>>print(aritmetica.sumar(7, 5))
+
+##########
+
+#>>>from matematica.aritmetica import sumar
+#>>>print(sumar(7, 5))
+
+""" También es posible que un paquete se divida en subpaquetes. Es decir, que una carpeta tendrá
+subcarpetas. Para que una subcarpeta sea considerada un subpaquete debe contener el archivo
+__init__.py """
+
+
+
+
+
+
+
+
+
