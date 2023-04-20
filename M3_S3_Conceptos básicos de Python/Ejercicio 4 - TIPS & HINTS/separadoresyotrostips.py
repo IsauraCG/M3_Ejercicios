@@ -24,4 +24,12 @@ print(type([])) #list <class 'list'>
 print(type(2 + 1j))#complex <class 'complex'>
 print(type(None))#None <class 'NoneType'>
 print(type(1.5))#float <class 'float'>
-    
+
+# Distintos modos de formato para impresión
+a = 1
+b = 2
+c = 3
+print(c)
+print("El valor es:", c)
+print(f"El valor es: {c}")
+print("El valor es: {} {} {}".format(c, a*b, a))

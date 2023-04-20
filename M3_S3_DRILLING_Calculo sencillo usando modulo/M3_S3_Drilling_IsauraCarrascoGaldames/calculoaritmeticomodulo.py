@@ -15,7 +15,7 @@ import math
 y = 81
 
 # Se declara una variable que contiene el resultado de la operación de 'la raíz cuadrada' de la variable 'y'
-w = math.sqrt(y)
+raizCuadrada = math.sqrt(y)
 
 # Impresión de un mensaje y el resultado de la operación requerida
-print(f"La raíz cuadrada de la variable 'y', cuyo valor es 81, es: {w}")
+print(f"La raíz cuadrada de la variable 'y', cuyo valor es 81, es: {raizCuadrada}")
