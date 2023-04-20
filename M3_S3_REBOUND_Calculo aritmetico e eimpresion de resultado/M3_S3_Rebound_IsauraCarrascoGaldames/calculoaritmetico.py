@@ -8,3 +8,9 @@ b = 30
 
 #operacion de multiplicación
 a * b
+
+# Mensaje de resultado
+print("El resultado de la opreación es: " + str(a*b))
+
+# Otra forma de imprimir dando formato al mensaje
+print(f"El resultado de la operación es: {a*b}")
