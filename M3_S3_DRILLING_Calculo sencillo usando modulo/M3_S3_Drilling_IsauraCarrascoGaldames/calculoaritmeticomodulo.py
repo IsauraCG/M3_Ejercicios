@@ -8,8 +8,14 @@ Requerimos hacer el cálculo de la raíz cuadrada de una variable llamada “y�
 utilizando el módulo de la librería math incorporada en Python. El resultado debemos asignarlo a
 una variable que será impresa en pantalla 
 """
+# Se importa math para poder operar
 import math
-y = print(math.sqrt(81))
 
-# Mensaje con formato:
-print(f"La raíz cuadrada de la variable 'y', cuyo valor es 81, es: {math.sqrt(81)}")
+# Se declara la variable 'y' otorgada por el requerimiento
+y = 81
+
+# Se declara una variable que contiene el resultado de la operación de 'la raíz cuadrada' de la variable 'y'
+w = math.sqrt(y)
+
+# Impresión de un mensaje y el resultado de la operación requerida
+print(f"La raíz cuadrada de la variable 'y', cuyo valor es 81, es: {w}")
