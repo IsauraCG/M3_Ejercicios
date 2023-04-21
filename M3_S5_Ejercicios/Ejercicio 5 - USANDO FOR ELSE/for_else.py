@@ -11,7 +11,8 @@ digitos = [0, 1, 5] #lista
 for i in digitos:   #para la variable i en lista digitos
     print(i)        #imprime el valor de 'i'
 else:               #sino
-    print("No quedan elementos en la lista.") #imprime el mensaje cuando 'i' o enteros ya no existen en la lista digitos
+    print("No quedan elementos en la lista.") 
+    #imprime el mensaje cuando 'i' o enteros ya no existen en la lista digitos
 
 
 #Resultado: No quedan elementos en la lista.
