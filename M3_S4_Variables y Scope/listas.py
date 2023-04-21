@@ -1,6 +1,9 @@
 #listas en python
 #estructura para almacenar datos con un orden especifico de inseccion
 
+#Una lista de enteros
+mi_lista[1, 2, 3]
+
 lista = [1,2,3,4]
 boolean = False
 lista_compleja = [1,"2",3,(1+3),1.5,lista,boolean]
