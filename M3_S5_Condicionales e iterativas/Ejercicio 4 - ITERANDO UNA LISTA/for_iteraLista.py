@@ -2,8 +2,8 @@
 Para ello, primero creamos la lista de números con los números: 6, 5, 3, 8, 4, 2, 5, 4 y 11.  """
 
 numeros = [6, 5, 3, 8, 4, 2, 5, 4, 11]
-suma = 0
+SUMA = 0
 for val in numeros:
-    suma = suma + val
-print("La suma es", suma)
-#Resultado: La suma es 48
+    SUMA = SUMA + val
+print("La SUMA es", SUMA)
+# Resultado: La SUMA es 48

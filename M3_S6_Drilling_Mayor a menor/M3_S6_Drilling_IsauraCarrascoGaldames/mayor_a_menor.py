@@ -1,9 +1,12 @@
 """ Se requiere contar con un programa que, dados 3 números diferentes, los evalúe y entregue el
 orden de mayor a menor. """
 
-N = 1234
-M = 34
-P = 556
+print("Por favor, ingrese un número:")
+N = int(input())
+print("Ingrese otro número:")
+M = int(input())
+print("Ingrese un último número:")
+P = int(input())
 
 list_num = [N, M, P]
 
