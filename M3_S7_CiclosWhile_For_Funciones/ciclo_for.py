@@ -40,3 +40,22 @@ print(f"El número '1' ha aparecido {contador} veces\n")
 # recorriendo o conociendo el indice de la lista
 for item in lista:
     print(f"Recorriendo y mostrando, índice: {lista.index(item)}")
+
+
+# SI QUIERES VERIFICAR SI UN ELEMENTO ESTÁ EN UNA LISTA,
+# NO SE USA SIEMPRE FOR: PUEDES USAR 'IN' O 'NOT IN'
+claves = ['456', '654', '156', '345', '234', '890']
+
+clave_ingresada = input("Por favor ingrese su clave numérica de 3 dígitos: ")
+condicion = True
+
+while True:
+    if clave_ingresada in claves:
+        print("Bienvenido/a a Tachibank")
+        condicion = False
+        break
+    elif clave_ingresada not in claves:
+        # print("Buscando ...")
+        print("La clave no existe")
+        clave_ingresada = input(
+            "Por favor ingrese su clave numérica de 3 dígitos: ")
