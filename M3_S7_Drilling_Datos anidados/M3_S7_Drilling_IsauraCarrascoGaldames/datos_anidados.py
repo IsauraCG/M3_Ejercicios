@@ -10,19 +10,19 @@ filtradas = []
 filtrados = []
 
 
-def filtrar_listas(listas_anidadas, filtradas, filtrados):
+def filtrar_listas(anidadas, sublistas_filtradas, numeros_filtrados):
     """ función que realiza el filtro de datos y sublistas """
     # Se establece ciclo for que recorre cada lista del elemento 'listas_anidadas'
-    for lista in listas_anidadas:
+    for lista in anidadas:
         # condiciona que si al sublista empieza distinta de '0' pase al ciclo de impresión
         if lista[0] != 0:
             # se añade la sublista y sus elementos al arreglo 'filtradas'
-            filtradas.append(lista)
+            sublistas_filtradas.append(lista)
             # declara ciclo que recorre cada elemento 'num' en la sublista 'lista'
             for num in lista:
                 # condiciona que si el 'num' en 'lista' es distinto de '0' se añade a la lista filtrados
                 if num != 0:
-                    filtrados.append(num)
+                    numeros_filtrados.append(num)
                 # si num es igual a 0 , se remueve de la sublista
                 elif num == 0:
                     continue
@@ -31,7 +31,7 @@ def filtrar_listas(listas_anidadas, filtradas, filtrados):
         elif (lista[0]) == 0:
             continue
 
-    return filtrados, filtradas
+    return numeros_filtrados, sublistas_filtradas
 
 
 filtrar_listas(listas_anidadas, filtradas, filtrados)
@@ -40,8 +40,8 @@ print("\nLos datos que se han filtrado son: ")
 print(*filtrados, sep=", ")
 print("\nLas sublistas que no comienzan con '0' son:", *filtradas)
 
-for lista in filtradas:
-    if 0 in lista:
-        lista.remove(0)
+for sublista in filtradas:
+    if 0 in sublista:
+        sublista.remove(0)
 
-print(f"\nLas sublistas sin elemento '0' quedan: ", *filtradas, "\n")
+print("\nLas sublistas sin elemento '0' quedan: ", *filtradas, "\n")
