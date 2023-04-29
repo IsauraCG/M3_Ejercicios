@@ -1,4 +1,4 @@
-# Recorrer los datos numéricos que se encuentran dentro de la siguiente lista de listas:
+""" # Recorrer los datos numéricos que se encuentran dentro de la siguiente lista de listas: """
 listas_anidadas = [[1, 2, 3], [0, 4, 5], [4, 0, 1], [6, 5, 4]]
 # Se debe imprimir cada dato de las listas en pantalla con las siguientes excepciones:
 #   • Si el primer número de la sublista es cero, omitir la impresión de toda la sublista.
@@ -20,7 +20,8 @@ def filtrar_listas(anidadas, sublistas_filtradas, numeros_filtrados):
             sublistas_filtradas.append(lista)
             # declara ciclo que recorre cada elemento 'num' en la sublista 'lista'
             for num in lista:
-                # condiciona que si el 'num' en 'lista' es distinto de '0' se añade a la lista filtrados
+                # condiciona que si el 'num' en 'lista' es distinto de '0'
+                # se añade a la lista filtrados
                 if num != 0:
                     numeros_filtrados.append(num)
                 # si num es igual a 0 , se remueve de la sublista
