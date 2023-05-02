@@ -8,7 +8,7 @@ personas = ["Natalia", "Joaquin", "Onofrio", "Adrian", "Victor", "Eduardo", "Fed
 # Declaración de variable 'palabra' que contiene el elemnto escogido por random, y en minúsculas
 palabra = random.choice(personas).lower()
 
-# lista que almacena todos los valores 'letra' ingresados por el usuario en cada intento
+# lista que almacena todos los valores 'letra' ingresados por el usuario en cada intento.
 adivinado = []
 
 # Lista que almacena los valores 'letra' acertados

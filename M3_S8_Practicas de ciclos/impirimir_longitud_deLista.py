@@ -11,7 +11,7 @@ for animal in animales:
 print(longitudes)
 
 
-# Otra solución
+# Otra solución.
 lista = ["gato", "perro", "elefante", "jirafa", "tigre"]
 longitudes = []
 

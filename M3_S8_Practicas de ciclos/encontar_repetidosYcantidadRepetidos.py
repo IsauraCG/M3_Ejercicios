@@ -3,7 +3,7 @@
 lista = [45, 23, 67, 89, 12, 56, 78, 90, 45, 67, 12, 45, 67, 67, 12, 12, 12]
 # arreglo que acumula los elementos repetidos
 repetidos = []
-# set que acumula una vez cada elemento repetidos
+# set que acumula una vez cada elemento repetidos.
 set_repetidos = set(repetidos)
 
 for num in lista:  # ciclo que recorre la lista de números, indicando 'por cada numero en lista: ejecutar ...'

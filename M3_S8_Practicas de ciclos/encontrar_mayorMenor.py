@@ -2,7 +2,7 @@
 
 lista_nums = [45, 23, 67, 89, 12, 56, 78, 90]
 
-# Encontrar el número más grande en la lista utilizando un bucle for.
+# Encontrar el número más grande en la lista utilizando un bucle for..
 
 maximo = lista_nums[0]
 

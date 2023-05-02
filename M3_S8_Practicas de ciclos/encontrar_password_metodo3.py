@@ -8,3 +8,5 @@ while password != solicitud_clave:
     solicitud_clave = input("Ingrese su clave ")
 
 print("Bienvenido!")
+
+# .

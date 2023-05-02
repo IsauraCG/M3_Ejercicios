@@ -1,4 +1,4 @@
-# Tenemos una lista de números
+# Tenemos una lista de números.
 
 lista = [3, 5, 2, 8, 1, 10]
 

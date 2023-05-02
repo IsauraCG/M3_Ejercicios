@@ -6,7 +6,7 @@ import random
 # Declaro lista de palabras existentes
 palabras_secretas = ["arroz", "pollo", "pure", "choclo", "seitan"]
 
-# Declaro la variable que almacena la opción secreta que el método random.choice escoge
+# Declaro la variable que almacena la opción secreta que el método random.choice escoge.
 adivinar = random.choice(palabras_secretas)
 
 # print(adivinar)

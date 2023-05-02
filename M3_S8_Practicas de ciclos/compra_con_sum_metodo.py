@@ -2,7 +2,7 @@
 
 compra = [25.50, 12.30, 36.40, 9.75, 15.20]
 
-# imprime la sumatoria de los precios en lista 'compra' con formato aproximado a 2 decimales
+# imprime la sumatoria de los precios en lista 'compra' con formato aproximado a 2 decimales.
 print(f"{sum(compra):.2f}")
 
 # después, declara la lista con descuento, y dentro, la operación que define los elementos en la lista

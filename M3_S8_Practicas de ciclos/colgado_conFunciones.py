@@ -11,7 +11,7 @@ adivinado = []
 vidas = 6
 
 
-# Función para mostrar el estado actual del juego
+# Función para mostrar el estado actual del juego.
 def mostrar_estado(adivinado, palabra):
     """
     Muestra el estado actual del juego, con las letras adivinadas

@@ -4,7 +4,7 @@ lista = [25.50, 12.30, 36.40, 9.75, 15.20]
 
 # se declara variable iteración
 i = 0
-# se declara variable que acumula la suma
+# se declara variable que acumula la suma.
 suma = 0
 
 while i < len(lista):

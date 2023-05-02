@@ -8,7 +8,7 @@ for i in precios:
     i = i - (i*0.1)
     descuento.append(i)
 
-print(descuento)  # imprime las lista precios con el descuento
+print(descuento)  # imprime las lista precios con el descuento.
 
 # imprime sumatoria de precios con descuento redondeado
 print(f"{sum(descuento):.2f}")

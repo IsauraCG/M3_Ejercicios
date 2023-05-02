@@ -8,7 +8,7 @@ for nombre in nombres:
     if len(nombre) >= 5:
         print(f"{nombre}")
 
-# si quiere imprimir cuántos nombres tienen 5 o más caracteres
+# si quiere imprimir cuántos nombres tienen 5 o más caracteres.
 contador = 0
 for nombre in nombres:
     if len(nombre) >= 5:

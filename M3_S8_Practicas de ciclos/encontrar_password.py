@@ -1,6 +1,6 @@
 # Encontrar constraseña ingresada con una de lista predefinida
 
-# Declara
+# Declara.
 claves = ['456', '654', '156', '345', '234', '890']
 
 clave_ingresada = ""
