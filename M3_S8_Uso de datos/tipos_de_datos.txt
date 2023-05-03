@@ -1,0 +1,97 @@
+=================================
+        TIPOS DE DATOS 
+=================================
+
+Los principales tipos de datos son: 
+numéricos, secuencias, mapas, clases, instancias y excepciones.
+
+Algunas clases de tipo colección son mutables. 
+Los métodos que añaden, retiran u ordenan los contenidos lo hacen internamente, 
+y a no ser que retornen un elemento concreto, 
+nunca retornan la propia instancia contenedora, sino None.
+
+Algunas operaciones son soportadas por varios tipos de objetos diferentes; por ejemplo, 
+prácticamente todos los objetos pueden ser comparados por igualdad, 
+evaluados para ser considerados como valores booleanos, 
+o representarse en forma de cadena de caracteres 
+(Ya sea con la función repr() o la ligeramente diferente str()). 
+
+Esta última es la usada implícitamente por la función print().
+
+Números
+Entero
+    int: Precisión fija
+    long: Precisión arbitraria
+    bool: Verdadero o falso
+    Punto flotante
+        float: Parte fraccional
+
+    Complejos
+        complex: Parte real y parte imaginaria
+
+Secuencias
+    Inmutables:
+        strings: Cadena de texto
+        tuples ()
+        bytes
+    Mutables:
+        lists []
+        byte arrays
+
+Conjuntos
+    sets:
+        set {}: mutable, sin duplicados, sin orden
+    frozen set:
+        frozenset: inmutable, sin duplicados, sin orden
+
+Mappings
+    Diccionarios:
+        dict: Grupo clave:valor, se acceden solo por clave
+    “Matriz asociativa”
+
+Callable
+    Funciones
+    Métodos
+    Clases
+
+Modulos    
+
+================================================================
+            Tipos secuencia — list, tuple, range
+================================================================
+
+Hay tres tipos básicos de secuencia: listas, tuplas y objetos de tipo rango. 
+
+Existen tipos de secuencia especiales usados para el procesado de datos binarios y 
+cadenas de caracteres que se describirán en secciones específicas.
+
+Tipo de datos: Secuencias 
+    inmutables: strings, tuples, bytes
+    mutables: lists, byte arrays
+
+La concatenación de secuencias inmutables siempre produce un nuevo objeto. 
+Esto significa que construir una secuencia usando la concatenación tiene un coste en ejecución 
+cuadrático respecto al tamaño de la secuencia final. 
+
+Para obtener un rendimiento lineal, se puede optar por una de las alternativas siguientes:
+ - En vez de concatenar objetos de tipo str, se puede construir una lista y usar finalmente 
+ el método str.join(), o bien utilizar una instancia de la clase io.StringIO y recuperar 
+ el valor final completo. 
+
+ - De forma similar, en vez de concatenar objetos de tipo bytes se puede usar el método bytes.join(), 
+ la clase io.BytesIO, o se puede realizar una modificación interna usando un objeto de la clase bytearray. 
+ Los objetos de tipo bytearray son mutables y tienen un mecanismo interno de gestión muy eficiente
+
+- En vez de concatenar tuplas (Instancias de tuple), usar una lista (list) y expandirla
+
+- Para otros tipos, investiga la documentación relevante de la clase
+
+- Algunos tipos de secuencia (como la clase range) solo soportan elementos que siguen un patrón específico, 
+y por tanto no soportan la concatenación ni la repetición.
+
+El método index lanza la excepción ValueError si x no se encuentra en s. 
+No todas las implementaciones soportan los parámetros opcionales i y j. 
+Estos parámetros permiten una búsqueda eficiente de partes de una secuencia. 
+Usar estos parámetros es más o menos equivalente a usar s[i:j].index(x), 
+pero sin copiar ningún dato y con el valor de índice retornado como valor relativo al inicio de la secuencia, 
+en vez de al inicio de la rebanada..

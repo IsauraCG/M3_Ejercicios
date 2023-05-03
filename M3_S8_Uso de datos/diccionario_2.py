@@ -81,6 +81,8 @@ otro_diccionario = dict.fromkeys(("Persona1", "Persona2", "Persona3"))
 print(otro_diccionario)
 # PARA FROM KEYS, LAS LISTAS PUEDEN SER KEYS
 
+
+# Otra forma
 claves = ["a", "b", "c"]
 valores = [1, 2, 3]
 nuevo_diccionario = {}
@@ -88,3 +90,9 @@ nuevo_diccionario = {}
 for i in range(len(claves)):
     nuevo_diccionario[claves[i]] = valores[i]
     print(nuevo_diccionario)
+
+# Otra forma aún más fácil
+claves = ["a", "b", "c"]
+valores = [1, 2, 3]
+nuevo = dict(zip(claves, valores))
+print(nuevo)
