@@ -51,6 +51,16 @@ for key in dict_animales:  # ciclo for que recorre el diccionario y agrega a la 
 buscado = lista_animales.index('gato')
 print(f"El ítem buscado 'gato', está en el índice: {buscado}")
 
+
+# OTRA FORMA DE ENCONTRAR EL VALUE EN UN DICCIONARIO
+diccionario = {'a': 1, 'b': 2, 'c': 3}
+valor_buscado = 2
+
+if valor_buscado in diccionario.values():
+    print("El valor buscado se encuentra en el diccionario")
+else:
+    print("El valor buscado no se encuentra en el diccionario")
+
 # CORCHETE
 # Al igual que en las listas y tuplas, podemos acceder a los datos anidados de los diccionarios
 # usando el operador corchete.
