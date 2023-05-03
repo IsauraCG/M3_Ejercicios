@@ -98,7 +98,7 @@ mi_lista = [[1, 2, 3], [4, 5]]
 
 # imprime el elemento en el índice [0] de la lista. (que en este caso es lista [1,2,3])
 print(mi_lista[0])
-# imprime el elemento en indice [1] de ña sublista, del elemento índice [0] en la lista '2'
+# imprime el elemento en indice [1] de la sublista que tiene índice [0], es decir, el numero '2'
 print(mi_lista[0][1])
 # Resultado:
 # [1, 2, 3]
