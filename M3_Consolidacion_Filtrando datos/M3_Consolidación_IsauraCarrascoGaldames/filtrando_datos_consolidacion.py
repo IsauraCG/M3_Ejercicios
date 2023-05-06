@@ -47,14 +47,17 @@ def imprimir_nombres(lista):
         print(f"{persona}")
 
 
-# Imprimir en pantalla la lista completa de nombres antes de ser modificados
+# Definir función que imprime lo solicitado
+def imprimir_listas(lista1, lista2, lista3, lista4):
+    # Imprimir en pantalla la lista completa de nombres antes de ser modificados
+    print(f"\nLa lista dada es: {lista1}")
+    # Imprimir los nombres de los magos grandiosos,los nombres de los científicos, y los restantes
+    print("\n** LOS GRANDIOSOS MAGOS SON: **")
+    imprimir_nombres(hacer_grandioso(lista2))
+    print("\n** LOS CIENTÍFICOS SON: **")
+    imprimir_nombres(lista3)
+    print("\n** LAS OTRAS PERSONAS SON: **")
+    imprimir_nombres(lista4)
 
-print(f"\nLa lista dada es: {lista_pers}")
 
-# Imprimir los nombres de los magos grandiosos,los nombres de los científicos, y los restantes
-print("\n** LOS GRANDIOSOS MAGOS SON: **")
-imprimir_nombres(hacer_grandioso(magos))
-print("\n** LOS CIENTÍFICOS SON: **")
-imprimir_nombres(cientificos)
-print("\n** LAS OTRAS PERSONAS SON: **")
-imprimir_nombres(otros)
+imprimir_listas(lista_pers, magos, cientificos, otros)
